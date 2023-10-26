@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
 #app {
     height: 100%;
 }
@@ -28,9 +33,9 @@ body {
     height: 100%;
 }
 
-.row [class^="col"] {
+/* .row [class^="col"] {
     padding: 0 10px;
-}
+} */
 
 .col-4 {
     flex-basis: calc((100% / 12) * 4);
@@ -63,7 +68,54 @@ img {
     padding: 10px;
 }
 
-.debug [class^="col"] {
-    border: 1px solid rgb(238, 0, 0);
-    
+:root {
+    --var-light-grey: #ebe9eb;
+    --var-grey-dark: #989798;
+    --var-card-padding: 8px;
+}
+
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* APP RULES */
+
+
+
+/* CARD  */
+.card {
+    padding: var(--var-card-padding);
+    display: flex;
+    gap: 10px;
+}
+
+.card-user-profile {
+    background-color: var(--var-light-grey);
+}
+
+.card-image {
+    width: 40px;
+}
+
+.card-image img {
+    border-radius: 50%;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-user-profile .card-body {
+    align-items: center;
+}
+
+.card-body__menu i,
+.user-messege {
+    color: var(--var-grey-dark);
 }
