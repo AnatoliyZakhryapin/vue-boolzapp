@@ -142,7 +142,13 @@ img {
 
 .card-contact-profile {
     border-top: 1px solid var(--var-light-grey);
+    
 }
+
+.card-contact-profile.active {
+	background-color: #d2dbdc;
+}
+
 
 .card.card-notifications {
     background-color: var(--var-skyblue);
