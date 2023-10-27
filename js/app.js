@@ -4,6 +4,7 @@ createApp({
     data() {
         return {
             currentIndex: 3,
+            searchText: "",
             printedText: "",
             status: false,
             contacts: [
