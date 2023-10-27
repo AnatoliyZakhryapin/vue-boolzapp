@@ -236,7 +236,7 @@
                 </div>
                 <div class="app-content__chat">
                     <ul class="chat">
-						<li class="message" :class="object.status === 'sent' ? 'sent' : 'received'" v-for="object in contacts[currentIndex].messages">
+						<li class="message" :class="addMessage(i)" v-for="(object, i) in contacts[currentIndex].messages">
                             {{ object.message }}
                             <p class="time">12:00</p>
                         </li>

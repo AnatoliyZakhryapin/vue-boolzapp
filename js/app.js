@@ -168,5 +168,15 @@ createApp({
 				},
 			],
         }
+    },
+    methods: {
+        addMessage(index){
+            const statusMessage = this.contacts[this.currentIndex].messages[index].status
+            if(statusMessage === 'sent') {
+                return 'sent';
+            } else {
+                return 'received';
+            }
+        }
     }        
 }).mount("#app")
