@@ -11,200 +11,64 @@
 <body>
     
     <div id="app">
-        <div class="container">
-            <div class="row">
-                <div class="col-4">
-                    <div class="side-bar">
-                        <section class="side-bar__header">
-                            <div class="card card-user-profile">
-                                <figure class="card-image">
-                                    <img class="image" src="./img/avatar_io.jpg">
-                                </figure>
-                                <div class="card-body">
-                                    <div class="card-body__text">
-                                        <h3 class="user-name">Sofia</h3>
-                                        <!-- <p class="user-messege">Ciao</p> -->
-                                    </div>
-                                    <div class="card-body__menu">
-                                        <ul class="menu">
-                                            <li class="menu-item">
-                                                <a href="#">
-                                                    <i class="fa-solid fa-circle-notch"></i>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="#">
-                                                    <i class="fa-solid fa-message"></i>
-                                                </a>
-                                             </li>
-                                             <li class="menu-item">
-                                                <a href="#">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </a>  
-                                             </li>
-                                        </ul>
-                                    </div>
-                                </div>
+        <div class="app__body container">
+            <div class="side-bar">
+                <section class="side-bar__header">
+                    <div class="card card-user-profile">
+                        <figure class="card-image">
+                            <img class="image" src="./img/avatar_io.jpg">
+                        </figure>
+                        <div class="card-body">
+                            <div class="card-body__text">
+                                <h3 class="user-name">Sofia</h3>
+                                <!-- <p class="user-messege">Ciao</p> -->
                             </div>
-                        </section>
-                        <section class="side-bar__notifications">
-                            <div class="card card-notifications">
-                                <figure class="card-image">
-                                    <img class="image" src="./img/avatar_1.jpg">
-                                </figure>
-                                <div class="card-body">
-                                    <div class="card-body__text">
-                                        <h3 class="card-title">Ricevi notifiche di nuovi messaggi</h3>
-                                        <p class="card-text">Attiva notifiche desktop</p>
-                                    </div>
-                                </div>
+                            <div class="card-body__menu">
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-circle-notch"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-message"></i>
+                                        </a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </a>  
+                                        </li>
+                                </ul>
                             </div>
-                        </section>
-                        <section class="side-bar__contact-search">
-                            <div class="search-bar">
-                                <input type="text" placeholder="Cerca o inizia una nuova chat">
-                                <span class="search-bar__icon">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </span>     
-                            </div>
-                        </section>
-                        <section class="side-bar__contact">
-                            <ul class="contact-list">
-                                <li class="list-item">
-                                    <div class="card card-contact-profile">
-                                        <figure class="card-image">
-                                            <img class="image" src="./img/avatar_1.jpg">
-                                        </figure>
-                                        <div class="card-body">
-                                            <div class="card-body__text">
-                                                <h3 class="user-name">Michele</h3>
-                                                <p class="user-messege">Ultimo messagio inviato</p>
-                                            </div>
-                                            <div class="card-body__time">
-                                                12:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-item">
-                                    <div class="card card-contact-profile">
-                                        <figure class="card-image">
-                                            <img class="image" src="./img/avatar_2.jpg">
-                                        </figure>
-                                        <div class="card-body">
-                                            <div class="card-body__text">
-                                                <h3 class="user-name">Fabio</h3>
-                                                <p class="user-messege">Ultimo messagio inviato</p>
-                                            </div>
-                                            <div class="card-body__time">
-                                                12:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-item">
-                                    <div class="card card-contact-profile">
-                                        <figure class="card-image">
-                                            <img class="image" src="./img/avatar_3.jpg">
-                                        </figure>
-                                        <div class="card-body">
-                                            <div class="card-body__text">
-                                                <h3 class="user-name">Samuele</h3>
-                                                <p class="user-messege">Ultimo messagio inviato</p>
-                                            </div>
-                                            <div class="card-body__time">
-                                                12:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-item">
-                                    <div class="card card-contact-profile">
-                                        <figure class="card-image">
-                                            <img class="image" src="./img/avatar_4.jpg">
-                                        </figure>
-                                        <div class="card-body">
-                                            <div class="card-body__text">
-                                                <h3 class="user-name">Alessandro B.</h3>
-                                                <p class="user-messege">Ultimo messagio inviato</p>
-                                            </div>
-                                            <div class="card-body__time">
-                                                12:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-item">
-                                    <div class="card card-contact-profile">
-                                        <figure class="card-image">
-                                            <img class="image" src="./img/avatar_5.jpg">
-                                        </figure>
-                                        <div class="card-body">
-                                            <div class="card-body__text">
-                                                <h3 class="user-name">Alessandro L.</h3>
-                                                <p class="user-messege">Ultimo messagio inviato</p>
-                                            </div>
-                                            <div class="card-body__time">
-                                                12:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-item">
-                                    <div class="card card-contact-profile">
-                                        <figure class="card-image">
-                                            <img class="image" src="./img/avatar_6.jpg">
-                                        </figure>
-                                        <div class="card-body">
-                                            <div class="card-body__text">
-                                                <h3 class="user-name">Claudia</h3>
-                                                <p class="user-messege">Ultimo messagio inviato</p>
-                                            </div>
-                                            <div class="card-body__time">
-                                                12:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-item">
-                                    <div class="card card-contact-profile">
-                                        <figure class="card-image">
-                                            <img class="image" src="./img/avatar_7.jpg">
-                                        </figure>
-                                        <div class="card-body">
-                                            <div class="card-body__text">
-                                                <h3 class="user-name">Federico</h3>
-                                                <p class="user-messege">Ultimo messagio inviato</p>
-                                            </div>
-                                            <div class="card-body__time">
-                                                12:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-item">
-                                    <div class="card card-contact-profile">
-                                        <figure class="card-image">
-                                            <img class="image" src="./img/avatar_8.jpg">
-                                        </figure>
-                                        <div class="card-body">
-                                            <div class="card-body__text">
-                                                <h3 class="user-name">Davide</h3>
-                                                <p class="user-messege">Ultimo messagio inviato</p>
-                                            </div>
-                                            <div class="card-body__time">
-                                                12:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </section>
+                        </div>
                     </div>
-                </div>
-                <div class="col-8">
-                    <div class="app-content">
-                        <div class="app-content__header">
+                </section>
+                <section class="side-bar__notifications">
+                    <div class="card card-notifications">
+                        <div class="card__icon">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-body__text">
+                                <h3 class="card-title">Ricevi notifiche di nuovi messaggi</h3>
+                                <p class="card-text">Attiva notifiche desktop</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="side-bar__contact-search">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                        <span class="search-bar__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>     
+                    </div>
+                </section>
+                <section class="side-bar__contact">
+                    <ul class="contact-list">
+                        <li class="list-item">
                             <div class="card card-contact-profile">
                                 <figure class="card-image">
                                     <img class="image" src="./img/avatar_1.jpg">
@@ -214,31 +78,183 @@
                                         <h3 class="user-name">Michele</h3>
                                         <p class="user-messege">Ultimo messagio inviato</p>
                                     </div>
-                                    <div class="card-body__menu">
-                                        <ul class="menu">
-                                            <li class="menu-item">
-                                                <a href="#">
-                                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="#">
-                                                    <i class="fa-solid fa-paperclip"></i>
-                                                </a>
-                                             </li>
-                                             <li class="menu-item">
-                                                <a href="#">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </a>  
-                                             </li>
-                                        </ul>
+                                    <div class="card-body__time">
+                                        <span class="time">12:00</span>
                                     </div>
                                 </div>
                             </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="card card-contact-profile">
+                                <figure class="card-image">
+                                    <img class="image" src="./img/avatar_2.jpg">
+                                </figure>
+                                <div class="card-body">
+                                    <div class="card-body__text">
+                                        <h3 class="user-name">Fabio</h3>
+                                        <p class="user-messege">Ultimo messagio inviato</p>
+                                    </div>
+                                    <div class="card-body__time">
+                                        <span class="time">12:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="card card-contact-profile">
+                                <figure class="card-image">
+                                    <img class="image" src="./img/avatar_3.jpg">
+                                </figure>
+                                <div class="card-body">
+                                    <div class="card-body__text">
+                                        <h3 class="user-name">Samuele</h3>
+                                        <p class="user-messege">Ultimo messagio inviato</p>
+                                    </div>
+                                    <div class="card-body__time">
+                                        <span class="time">12:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="card card-contact-profile">
+                                <figure class="card-image">
+                                    <img class="image" src="./img/avatar_4.jpg">
+                                </figure>
+                                <div class="card-body">
+                                    <div class="card-body__text">
+                                        <h3 class="user-name">Alessandro B.</h3>
+                                        <p class="user-messege">Ultimo messagio inviato</p>
+                                    </div>
+                                    <div class="card-body__time">
+                                        <span class="time">12:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="card card-contact-profile">
+                                <figure class="card-image">
+                                    <img class="image" src="./img/avatar_5.jpg">
+                                </figure>
+                                <div class="card-body">
+                                    <div class="card-body__text">
+                                        <h3 class="user-name">Alessandro L.</h3>
+                                        <p class="user-messege">Ultimo messagio inviato</p>
+                                    </div>
+                                    <div class="card-body__time">
+                                        <span class="time">12:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="card card-contact-profile">
+                                <figure class="card-image">
+                                    <img class="image" src="./img/avatar_6.jpg">
+                                </figure>
+                                <div class="card-body">
+                                    <div class="card-body__text">
+                                        <h3 class="user-name">Claudia</h3>
+                                        <p class="user-messege">Ultimo messagio inviato</p>
+                                    </div>
+                                    <div class="card-body__time">
+                                        <span class="time">12:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="card card-contact-profile">
+                                <figure class="card-image">
+                                    <img class="image" src="./img/avatar_7.jpg">
+                                </figure>
+                                <div class="card-body">
+                                    <div class="card-body__text">
+                                        <h3 class="user-name">Federico</h3>
+                                        <p class="user-messege">Ultimo messagio inviato</p>
+                                    </div>
+                                    <div class="card-body__time">
+                                        <span class="time">12:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <div class="card card-contact-profile">
+                                <figure class="card-image">
+                                    <img class="image" src="./img/avatar_8.jpg">
+                                </figure>
+                                <div class="card-body">
+                                    <div class="card-body__text">
+                                        <h3 class="user-name">Davide</h3>
+                                        <p class="user-messege">Ultimo messagio inviato</p>
+                                    </div>
+                                    <div class="card-body__time">
+                                        <span class="time">12:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="app-content">
+                <div class="app-content__header">
+                    <div class="card card-contact-profile">
+                        <figure class="card-image">
+                            <img class="image" src="./img/avatar_1.jpg">
+                        </figure>
+                        <div class="card-body">
+                            <div class="card-body__text">
+                                <h3 class="user-name">Michele</h3>
+                                <p class="user-messege">Ultimo messagio inviato</p>
+                            </div>
+                            <div class="card-body__menu">
+                                <ul class="menu">
+                                    <li class="menu-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-paperclip"></i>
+                                        </a>
+                                        </li>
+                                        <li class="menu-item">
+                                        <a href="#">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </a>  
+                                        </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="app-content__main"></div>
-                        <div class="app-content__footer"></div>
                     </div>
+                </div>
+                <div class="app-content__chat">
+                    <ul class="chat">
+						<li class="message sent">Lorem ipsum dolor sit amet.
+                            <p class="time">12:00</p>
+                        </li>
+						<li class="message received">Lorem, ipsum dolor.
+                            <p class="time">12:00</p>
+                        </li>
+						<li class="message sent">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+							alias deserunt in.
+                            <p class="time">12:00</p>
+						</li>
+					</ul>
+                </div>
+                <div class="app-content__toolbar">
+                    <span>
+                        <i class="fa-regular fa-face-smile"></i>
+                    </span>
+                    <input type="text">
+                    <span>
+                        <i class="fa-solid fa-microphone"></i>
+                    </span>
                 </div>
             </div>
         </div>
