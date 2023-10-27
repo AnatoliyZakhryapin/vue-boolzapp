@@ -119,3 +119,7 @@ img {
 .user-messege {
     color: var(--var-grey-dark);
 }
+
+.card-contact-profile {
+    border-top: 1px solid var(--var-light-grey);
+}
