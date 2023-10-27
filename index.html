@@ -64,6 +64,7 @@
                             type="text" 
                             placeholder="Cerca o inizia una nuova chat"
                             v-model="searchText"
+                            @keyup.enter="filtrContact()"
                         >
                         <span class="search-bar__icon">
                             <i class="fa-solid fa-magnifying-glass"></i>

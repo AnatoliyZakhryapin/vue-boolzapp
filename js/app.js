@@ -208,6 +208,20 @@ createApp({
                 }
                 this.status = false;
             }, 1000)
+        },
+        filtrContact(){
+            const textToControl = this.searchText.toLowerCase()
+            const array = this.contacts
+            console.log(array)
+            console.log(textToControl)
+            for(let i = 0; i < array.length; i++){
+                const name = array[i].name.toLowerCase()
+                console.log(name)
+                array[i].visible = true;
+                if(name.match(textToControl) === null){
+                    array[i].visible = false;
+                }
+            }
         }
-    }        
+    }
 }).mount("#app")
