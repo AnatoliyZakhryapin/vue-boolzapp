@@ -264,7 +264,7 @@
                     <input 
                         type="text" 
                         v-model="printedText"
-                        @keyup.enter="sendMessage()"
+                        @keyup.enter="sendMessage(), answerMessage()"
                     >
                     <span>
                         <i class="fa-solid fa-microphone"></i>

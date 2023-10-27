@@ -5,6 +5,7 @@ createApp({
         return {
             currentIndex: 3,
             printedText: "",
+            status: false,
             contacts: [
 				{
 					name: 'Michele',
@@ -191,6 +192,21 @@ createApp({
             };
             this.contacts[this.currentIndex].messages.push(message)
             this.printedText = "";
+            this.status = true;
+        },
+        answerMessage(){
+            setTimeout(() => {
+                const text = "ok";
+                const message = {
+                    date: '10/01/2020 15:30:55',
+                    message: text,
+                    status: 'received',
+                };
+                if(this.status === true){
+                    this.contacts[this.currentIndex].messages.push(message)
+                }
+                this.status = false;
+            }, 1000)
         }
     }        
 }).mount("#app")
