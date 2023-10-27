@@ -261,7 +261,11 @@
                     <span>
                         <i class="fa-regular fa-face-smile"></i>
                     </span>
-                    <input type="text">
+                    <input 
+                        type="text" 
+                        v-model="printedText"
+                        @keyup.enter="sendMessage()"
+                    >
                     <span>
                         <i class="fa-solid fa-microphone"></i>
                     </span>
