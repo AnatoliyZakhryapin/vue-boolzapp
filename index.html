@@ -236,17 +236,18 @@
                 </div>
                 <div class="app-content__chat">
                     <ul class="chat">
-						<li class="message sent">Lorem ipsum dolor sit amet.
+						<li class="message" :class="object.status === 'sent' ? 'sent' : 'received'" v-for="object in contacts[currentIndex].messages">
+                            {{ object.message }}
                             <p class="time">12:00</p>
                         </li>
-						<li class="message received">Lorem, ipsum dolor.
+						<!-- <li class="message received">Lorem, ipsum dolor.
                             <p class="time">12:00</p>
                         </li>
 						<li class="message sent">
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
 							alias deserunt in.
                             <p class="time">12:00</p>
-						</li>
+						</li> -->
 					</ul>
                 </div>
                 <div class="app-content__toolbar">
