@@ -68,8 +68,13 @@
                 </section>
                 <section class="side-bar__contact">
                     <ul class="contact-list">
-                        <li class="list-item" v-for="(contact, i) in contacts">
-                            <div class="card card-contact-profile" :class="{'active': i === currentIndex}">
+                        <li 
+                        class="list-item" 
+                        v-for="(contact, i) in contacts"
+                        @click="getActive(i)" >
+                            <div 
+                            class="card card-contact-profile" 
+                            :class="{'active': i === currentIndex}">
                                 <figure class="card-image">
                                     <img class="image" :src="contact.avatar">
                                 </figure>

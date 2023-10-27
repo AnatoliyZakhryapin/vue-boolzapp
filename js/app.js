@@ -177,6 +177,9 @@ createApp({
             } else {
                 return 'received';
             }
+        },
+        getActive(index){
+            this.currentIndex = index;
         }
     }        
 }).mount("#app")
