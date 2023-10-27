@@ -118,8 +118,10 @@ img {
     gap: 10px;
 }
 
-.card-user-profile {
+.card-user-profile,
+.app-content__header .card-contact-profile {
     background-color: var(--var-light-grey);
+    padding-right: 20px;
 }
 
 .card-image {
@@ -137,7 +139,8 @@ img {
     justify-content: space-between;
 }
 
-.card-user-profile .card-body {
+.card-user-profile .card-body,
+.app-content__header .card-body {
     align-items: center;
 }
 
