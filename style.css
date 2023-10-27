@@ -71,9 +71,9 @@ img {
 :root {
     --var-light-grey: #ebe9eb;
     --var-grey-dark: #989798;
+    --var-skyblue: #8dd8fe;
     --var-card-padding: 8px;
 }
-
 
 .menu {
     display: flex;
@@ -98,7 +98,8 @@ img {
 }
 
 .card-image {
-    width: 40px;
+    width: 50px;
+    padding: 0 5px;
 }
 
 .card-image img {
@@ -122,4 +123,13 @@ img {
 
 .card-contact-profile {
     border-top: 1px solid var(--var-light-grey);
+}
+
+.card-notifications {
+    background-color: var(--var-skyblue);
+}
+
+.card-notifications .card-text {
+    color: var(--var-grey-dark);
+    text-decoration-line: underline; 
 }
