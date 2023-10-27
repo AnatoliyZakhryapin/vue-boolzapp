@@ -205,11 +205,13 @@
                 <div class="app-content__header">
                     <div class="card card-contact-profile">
                         <figure class="card-image">
-                            <img class="image" src="./img/avatar_1.jpg">
+                            <img 
+                                class="image" 
+                                :src="contacts[currentIndex].avatar">
                         </figure>
                         <div class="card-body">
                             <div class="card-body__text">
-                                <h3 class="user-name">Michele</h3>
+                                <h3 class="user-name">{{ contacts[currentIndex].name }}</h3>
                                 <p class="user-messege">Ultimo messagio inviato</p>
                             </div>
                             <div class="card-body__menu">
