@@ -257,8 +257,15 @@ createApp({
 			const array = contact.messages
 			const lastIndex = array.length - 1;
 			const lastTime = array[lastIndex].date
-			console.log(typeof(lastTime))
-			return lastTime;
+			let ms = Date.parse(lastTime);
+			console.log(typeof(ms), ms)
+			const d = new Date();
+			console.log(typeof(d), d)
+			let hour = d.getHours();
+			let minutes = d.getMinutes();
+			const timeToPrint = `${hour}:${minutes}`
+			console.log(timeToPrint)
+			return timeToPrint;
 		},
 		time() {
 			const d = new Date();
@@ -271,6 +278,17 @@ createApp({
 			const seconds = d.getSeconds();
 			const printTime = `${day}/${mounth}/${year} ${hour}:${minutes}:${seconds}`;
 		  	return printTime;
+		},
+		timeChat(date){
+			let ms = Date.parse(date);
+			console.log(typeof(ms), ms)
+			const d = new Date();
+			console.log(typeof(d), d)
+			let hour = d.getHours();
+			let minutes = d.getMinutes();
+			const timeToPrint = `${hour}:${minutes}`
+			console.log(timeToPrint)
+			return timeToPrint;
 		}
     },
 	// computed: {
