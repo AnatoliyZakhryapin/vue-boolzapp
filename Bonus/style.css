@@ -124,6 +124,7 @@ img {
 .card-image {
     width: 50px;
     padding: 0 5px;
+    flex-shrink: 0;
 }
 
 .card-image img {
