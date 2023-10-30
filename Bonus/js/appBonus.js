@@ -244,7 +244,14 @@ createApp({
 			const array = contact.messages
 			const lastIndex = array.length - 1;
 			const message = array[lastIndex].message
-			return message;
+			let messageToPrint = "";
+			const messageCut = message.slice(0,28);
+			if(message.length > 28){
+				messageToPrint = messageCut + "...";
+			} else {
+				messageToPrint = message;
+			}
+			return messageToPrint;
 		}
     },
 	mounted() {
