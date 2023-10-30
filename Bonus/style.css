@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+#app {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient( to bottom, #009688 0px, #009688 200px, #dddbd1 200px, #d2dbdc 100% );
+    padding: 80px 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #fffeff;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --var-light-beige: #ebe9eb;
+    --var-super-light-grey: #f7f6f6;
+    --var-light-grey: #ebe9eb;
+    --var-grey-dark: #989798;
+    --var-grey-super-dark: #383838;
+    --var-skyblue: #8dd8fe;
+    --var-card-padding: 8px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.chat .time {
+    text-align: right;
+}
+
+/* APP RULES */
+
+.app__body {
+    height: 100%;
+    display: flex;
+}
+
+.side-bar {
+	width: 350px;
+	flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar__contact {
+    overflow-y: scroll;
+}
+/* SEARCH */
+
+.search-bar {
+    padding: 5px;
+    position: relative;
+    background-color: var(--var-super-light-grey);
+}
+
+.search-bar input {
+    line-height: 30px;
+    width: 100%;
+    padding-left: 50px;
+    border: 1px solid var(--var-light-grey);
+    border-radius: 5px
+}
+
+.search-bar__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    color: var(--var-grey-dark);
+    width: 40px;
+    text-align: center;
+}
+
+
+
+/* CARD  */
+.card {
+    padding: var(--var-card-padding);
+    display: flex;
+    gap: 10px;
+}
+
+.card-user-profile,
+.app-content__header .card-contact-profile {
+    background-color: var(--var-light-grey);
+    padding-right: 20px;
+}
+
+.card-image {
+    width: 50px;
+    padding: 0 5px;
+}
+
+.card-image img {
+    border-radius: 50%;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-user-profile .card-body,
+.app-content__header .card-body {
+    align-items: center;
+}
+
+.card-body__menu i,
+.user-messege {
+    color: var(--var-grey-dark);
+}
+
+.card-contact-profile {
+    border-top: 1px solid var(--var-light-grey);
+    
+}
+
+.card-contact-profile.active {
+	background-color: #d2dbdc;
+}
+
+
+.card.card-notifications {
+    background-color: var(--var-skyblue);
+    padding: var(--var-card-padding);
+    padding-left: 13px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+.card-notifications .card-text {
+    color: var(--var-grey-dark);
+    text-decoration-line: underline; 
+}
+
+.card__icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    padding: 0 5px;
+    aspect-ratio: 1;
+    color: #8edafc;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* APP-CONTENT */
+
+.app-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.app-content__toolbar {
+    background-color: var(--var-light-beige);
+    color: var(--var-grey-super-dark);
+    padding: var(--var-card-padding);
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.app-content__toolbar span {
+    padding: 0 30px;
+}
+
+.app-content__toolbar input {
+    line-height: 40px;
+    flex-grow: 1;
+    padding-left: 5px;
+    border: 1px solid var(--var-light-grey);
+    border-radius: 8px;
+}
+
+/* CHAT */
+
+.app-content__chat {
+    flex-grow: 1;
+    background-image: url("./img/mine.jpg");
+    padding: 40px;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.message {
+	border-radius: 16px;
+	padding: 10px 20px;
+	max-width: 80%;
+    position: relative;
+}
+
+.message.sent {
+	background-color: #d5f9ba;
+	align-self: flex-end;
+}
+
+.message.received {
+	background-color: white;
+	align-self: flex-start;
+}
+
+.deleted {
+    color: var(--var-grey-dark);
+    font-style: italic;
+}
+
+.menu-message {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    min-width: 140px;
+    border-radius: 5px;
+	padding: 20px 20px;
+    background-color: white;
+    box-shadow: 0px 5px 11px 4px var(--var-grey-dark);
+    z-index: 1;
+}
+
+
+
+
