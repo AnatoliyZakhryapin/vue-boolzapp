@@ -257,14 +257,19 @@ createApp({
 			const array = contact.messages
 			const lastIndex = array.length - 1;
 			const lastTime = array[lastIndex].date
+			console.log(typeof(lastTime))
 			return lastTime;
 		},
 		time() {
 			const d = new Date();
-			// let hour = d.getHours();
-			// let minut = d.getMinutes();
-			// let printTime = hour + ":" + minut
-			let printTime = d.toLocaleTimeString()
+			const day = d.getDate();
+			const mounth = d.getMonth() + 1;
+			const year = d.getFullYear();
+			console.log(day,mounth, year)
+			const hour = d.getHours();
+			const minutes = d.getMinutes();
+			const seconds = d.getSeconds();
+			const printTime = `${day}/${mounth}/${year} ${hour}:${minutes}:${seconds}`;
 		  	return printTime;
 		}
     },
