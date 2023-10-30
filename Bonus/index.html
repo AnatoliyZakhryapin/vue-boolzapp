@@ -267,7 +267,7 @@
                                            <p v-else>Restore message</p>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li v-if="object.status === 'sent'">
                                         <a 
                                             @click.stop="deleteMessageCompletely(i)"
                                             href="#">
