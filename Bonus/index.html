@@ -261,7 +261,12 @@
                                 <p v-else class="deleted"> Messagio è stato eliminato...</p>
                                 <ul v-if="object.isActiveMenu" class="menu-message">
                                     <li>Message info</li>
-                                    <li><a @click="deleteMessage(i)" href="#">Delete message</a></li>
+                                    <li>
+                                        <a @click="deleteMessage(i)" href="#">
+                                           <p v-if="!object.isDeleted">Delete message just for you</p>
+                                           <p v-else>Restore message</p>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <p class="time">12:00</p>
                         </li>
