@@ -93,7 +93,9 @@
                                         <p class="user-messege">{{ viewLastMessage(contact) }}</p>
                                     </div>
                                     <div class="card-body__time">
-                                        <span class="time">12:00</span>
+                                        <span class="time">
+                                            {{ viewLastMessageTime(contact) }}
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -275,7 +277,9 @@
                                         </a>
                                     </li>
                                 </ul>
-                                <p class="time">12:00</p>
+                                <p class="time">
+                                    {{ object.date }}
+                                </p>
                         </li>
 						<!-- <li class="message received">Lorem, ipsum dolor.
                             <p class="time">12:00</p>

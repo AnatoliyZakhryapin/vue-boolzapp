@@ -189,7 +189,7 @@ createApp({
         sendMessage(){
             const text = this.printedText;
             const message = {
-                date: '10/01/2020 15:30:55',
+                date: this.time(),
                 message: text,
                 status: 'sent',
             };
@@ -201,7 +201,7 @@ createApp({
             setTimeout(() => {
                 const text = "ok";
                 const message = {
-                    date: '10/01/2020 15:30:55',
+                    date: this.time(),
                     message: text,
                     status: 'received',
                 };
@@ -252,8 +252,31 @@ createApp({
 				messageToPrint = message;
 			}
 			return messageToPrint;
+		},
+		viewLastMessageTime(contact){
+			const array = contact.messages
+			const lastIndex = array.length - 1;
+			const lastTime = array[lastIndex].date
+			return lastTime;
+		},
+		time() {
+			const d = new Date();
+			// let hour = d.getHours();
+			// let minut = d.getMinutes();
+			// let printTime = hour + ":" + minut
+			let printTime = d.toLocaleTimeString()
+		  	return printTime;
 		}
     },
+	// computed: {
+	// 	time() {
+	// 		const d = new Date();
+	// 		let hour = d.getHours();
+	// 		let minut = d.getMinutes();
+	// 		let printTime = hour + ":" + minut
+	// 	  return printTime;
+	// 	}
+	//   },
 	mounted() {
         console.log("VUE OK")
 
