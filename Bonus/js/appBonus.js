@@ -231,7 +231,9 @@ createApp({
 				this.contacts[this.currentIndex].messages[index].message,
 				this.contacts[this.currentIndex].messages[index].isDeleted
 				)
-
+		},
+		deleteMessageCompletely(index){
+			this.contacts[this.currentIndex].messages.splice(index,1)
 		},
 		activeMenuMessage(index){
 			this.contacts[this.currentIndex].messages[index].isActiveMenu = !this.contacts[this.currentIndex].messages[index].isActiveMenu

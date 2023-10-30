@@ -256,15 +256,22 @@
                             class="message" 
                             :class="addMessage(i)" 
                             v-for="(object, i) in contacts[currentIndex].messages"
-                            @click="activeMenuMessage(i)">
+                            @click.stop="activeMenuMessage(i)">
                                 <p v-if="!object.isDeleted">{{ object.message }}</p>
                                 <p v-else class="deleted"> Messagio è stato eliminato...</p>
                                 <ul v-if="object.isActiveMenu" class="menu-message">
                                     <li>Message info</li>
                                     <li>
-                                        <a @click="deleteMessage(i)" href="#">
+                                        <a @click.stop="deleteMessage(i)" href="#">
                                            <p v-if="!object.isDeleted">Delete message just for you</p>
                                            <p v-else>Restore message</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a 
+                                            @click.stop="deleteMessageCompletely(i)"
+                                            href="#">
+                                             <p>Delete message for everyone </p>
                                         </a>
                                     </li>
                                 </ul>
