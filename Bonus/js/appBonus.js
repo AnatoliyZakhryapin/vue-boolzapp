@@ -239,7 +239,13 @@ createApp({
 		},
 		activeMenuMessage(index){
 			this.contacts[this.currentIndex].messages[index].isActiveMenu = !this.contacts[this.currentIndex].messages[index].isActiveMenu
-		}	
+		},
+		viewLastMessage(contact){
+			const array = contact.messages
+			const lastIndex = array.length - 1;
+			const message = array[lastIndex].message
+			return message;
+		}
     },
 	mounted() {
         console.log("VUE OK")

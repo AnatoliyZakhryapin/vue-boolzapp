@@ -90,7 +90,7 @@
                                 <div class="card-body">
                                     <div class="card-body__text">
                                         <h3 class="user-name">{{ contact.name }}</h3>
-                                        <p class="user-messege">Ultimo messagio inviato</p>
+                                        <p class="user-messege">{{ viewLastMessage(contact) }}</p>
                                     </div>
                                     <div class="card-body__time">
                                         <span class="time">12:00</span>
@@ -226,7 +226,7 @@
                         <div class="card-body">
                             <div class="card-body__text">
                                 <h3 class="user-name">{{ contacts[currentIndex].name }}</h3>
-                                <p class="user-messege">Ultimo messagio inviato</p>
+                                <p class="user-messege">{{ viewLastMessage(contacts[currentIndex]) }}</p>
                             </div>
                             <div class="card-body__menu">
                                 <ul class="menu">
