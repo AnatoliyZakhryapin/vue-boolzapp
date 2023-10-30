@@ -3,6 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
+			event: 'input',
             currentIndex: 3,
             searchText: "",
             printedText: "",
@@ -223,5 +224,9 @@ createApp({
                 }
             }
         }
+    },
+	mounted() {
+        console.log("VUE OK")
+
     }
 }).mount("#app")
